@@ -1,0 +1,19 @@
+{ "welcomeData" :[
+    {
+        "name": "Tenders", 
+        "data": "500+"
+    },
+    {
+        "name": "Callcenter", 
+        "data": "200+"
+    },
+    {
+        "name": "Agents available", 
+        "data": "375.000"
+    },
+    {
+        "name": "Faster sourcing", 
+        "data": "85%"
+    }
+]
+}

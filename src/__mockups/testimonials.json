@@ -1,0 +1,50 @@
+{ "webapp" : [{
+    "testimonials" : [
+        {
+            "name": "Jan Brenneke",
+            "position": "VP Operations",
+            "speech": "Finding a suitable outsourcing service provider through Snubes was very easy and our personal consultant helped us every step of the way. After a short time we had good offers on the table. An on-site visit confirmed the positive impression and we have now found a matching partner. Thank you for your great support, which has helped us a lot in the selection process."
+        },
+        {
+            "name": "John Doe",
+            "position": "CEO / Founder",
+            "speech": "Finding a suitable outsourcing service provider through Snubes was very easy and our personal consultant helped us every step of the way. After a short time we had good offers on the table. An on-site visit confirmed the positive impression and we have now found a matching partner. Thank you for your great support, which has helped us a lot in the selection process."
+        },
+        {
+            "name": "Alessandro Mike",
+            "position": "Marketing Manager",
+            "speech": "Finding a suitable outsourcing service provider through Snubes was very easy and our personal consultant helped us every step of the way. After a short time we had good offers on the table. An on-site visit confirmed the positive impression and we have now found a matching partner. Thank you for your great support, which has helped us a lot in the selection process."
+        }
+    ]
+},
+
+{
+    "logos" : [
+        {
+            "id": 1,
+            "name" : "talixo",
+            "path": "../images/allianz-logo.png"
+        },
+        {
+            "id": 2,
+            "name": "creditShelf",
+            "path": "../images/creditshelf-logo.png"
+        },
+        {
+            "id": 3,
+            "name": "userCentrics",
+            "path": "../images/usercentrics-logo.png"
+        },
+        {
+            "id": 4,
+            "name": "laserHub",
+            "path": "../images/laserhub-logo.png"
+        },
+        {
+            "id": 5,
+            "name" : "talixo",
+            "path": "../images/talixo-logo.png"
+        }
+    ]
+}]
+}

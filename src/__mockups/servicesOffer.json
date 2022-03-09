@@ -1,0 +1,19 @@
+{
+    "servicesOffers" : [
+        {
+            "name": "Signup free",
+            "image": "../images/freeSignup.png",
+            "description": "Signing up and setting up your project takes less than 5 minutes"
+        },
+        {
+            "name": "Source Smarter",
+            "image": "../images/sourceSmarter.png",
+            "description": "Our data-based AI and our experts will help you find exactly what you are looking for"
+        },
+        {
+            "name": "Receive Offers",
+            "image": "../images/receiveOffers.png",
+            "description": "With our insights you always receive high-quality proposals at the best price"
+        }
+    ]
+}
