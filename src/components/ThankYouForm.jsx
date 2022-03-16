@@ -13,9 +13,9 @@ function ThankYouForm(props) {
       <hr className="mt-3 stroke-black"></hr>
       <table className="mt-6 mx-auto ">
         <tbody>
-          {props.submittedData.map((form) => {
+          {props.submittedData.map((form, index) => {
             return (
-              <tr>
+              <tr key={index}>
                 <td className="text-left">
                   <p className="pt-3">Company</p>
                   <p className="pt-3">Name</p>

@@ -29,6 +29,7 @@ function ContactForm() {
     fields.push(data)
     setSubmittedData(fields)
     setFormSubmit(true)
+
   }
 
   useEffect(() => {
@@ -49,7 +50,6 @@ function ContactForm() {
 
   return (
     <div className="md:text-center px-6 py-4">
-      {' '}
       {isFormSubmit ? (
         <ThankYouForm
           submittedData={submittedData}
@@ -76,9 +76,8 @@ function ContactForm() {
                   type="text"
                   name="companyName"
                   placeholder="Company"
-                  className={`px-6 py-2 rounded w-80 ${
-                    errors.companyName ? 'border-1 border-red-600' : 'border'
-                  }`}
+                  className={`px-6 py-2 rounded w-80 ${errors.companyName ? 'border-1 border-red-600' : 'border'
+                    }`}
                   {...register('companyName', {
                     required: true,
                     maxLength: 80,
@@ -93,12 +92,12 @@ function ContactForm() {
                   name="fullName"
                   id="nameId"
                   placeholder="Full name"
-                  className={`px-6 py-2 rounded w-80 ${
-                    errors.fullName ? 'border-1 border-red-600' : 'border'
-                  }`}
+                  className={`px-6 py-2 rounded w-80 ${errors.fullName ? 'border-1 border-red-600' : 'border'
+                    }`}
                   {...register('fullName', {
                     required: true,
                     maxLength: 50,
+                    pattern: /^[a-zA-Z]+$/
                   })}
                 />
               </div>
@@ -123,11 +122,10 @@ function ContactForm() {
                         paddingLeft: '15px',
                         borderColor: '#dee2e6',
                       }}
-                      className={`w-64 rounded-md lg:ml-20 ml-0 left-0 ${
-                        errors.phoneNumber
-                          ? 'border-1 border-red-600'
-                          : 'border'
-                      }`}
+                      className={`w-64 rounded-md lg:ml-20 ml-0 left-0 ${errors.phoneNumber
+                        ? 'border-1 border-red-600'
+                        : 'border'
+                        }`}
                       specialLabel={null}
                       autoFormat={true}
                       country={country.toLowerCase()}
@@ -147,9 +145,8 @@ function ContactForm() {
                   id="emailId"
                   placeholder="name@email.com"
                   {...register('email', { required: true })}
-                  className={`px-6 py-2 rounded w-80 ${
-                    errors.email ? 'border-1 border-red-600' : 'border'
-                  }`}
+                  className={`px-6 py-2 rounded w-80 ${errors.email ? 'border-1 border-red-600' : 'border'
+                    }`}
                 />
               </div>
 
@@ -161,7 +158,7 @@ function ContactForm() {
             </form>
           </div>
         </React.Fragment>
-      )}{' '}
+      )}
     </div>
   )
 }

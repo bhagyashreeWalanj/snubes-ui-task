@@ -18,4 +18,4 @@ function WelcomeInfo() {
 	</div>
 }
 
-export default WelcomeInfo;
+export default WelcomeInfo = React.memo(WelcomeInfo);
