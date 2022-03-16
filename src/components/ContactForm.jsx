@@ -15,10 +15,10 @@ function ContactForm() {
     handleSubmit,
     formState: { errors },
   } = useForm()
-  const [isFormSubmit, setFormSubmit] = useState(false)
-  const [submittedData, setSubmittedData] = useState([])
-  const [country, setCountry] = useState('de')
-  const [countryCode, setCountryCode] = useState('de')
+  const [isFormSubmit, setFormSubmit] = useState(false); // boolean validation if form is valid or not
+  const [submittedData, setSubmittedData] = useState([]); // pass submitted data to Thank You form 
+  const [country, setCountry] = useState('de'); // To get country name for international phone number formatting
+  const [countryCode, setCountryCode] = useState('de'); // to get Country code to set on phone input
 
   const onSubmit = async (data) => {
     const fields = []
