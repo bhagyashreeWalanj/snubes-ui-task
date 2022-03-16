@@ -3,6 +3,7 @@ import { useForm, Controller } from 'react-hook-form'
 import ThankYouForm from './ThankYouForm'
 import { format } from 'libphonenumber-js'
 import PhoneInput from 'react-phone-input-2'
+import { RiErrorWarningLine } from 'react-icons/ri';
 import 'react-phone-input-2/lib/style.css'
 import '../css/phone-input.css'
 
@@ -85,6 +86,7 @@ function ContactForm() {
                   })}
                 />
               </div>
+
               <div className="flex-grow w-auto mx-auto">
                 <label className="mr-24 text-gray-600 font-medium">Name</label>
                 <input
@@ -100,6 +102,7 @@ function ContactForm() {
                     pattern: /^[a-zA-Z]+$/
                   })}
                 />
+
               </div>
 
               <div className="flex lg:flex-row flex-col items-start sm:items-center mx-auto">
@@ -155,6 +158,25 @@ function ContactForm() {
                 value="Get Informed"
                 className="px-6 py-2 w-60 bg-blue-500 text-white rounded  mx-auto my-2"
               />
+              {errors?.companyName?.type === "required" && <span className="flex justify-center text-xs m-0 text-red-500">
+                <RiErrorWarningLine className="m-1" />Company Name field is required</span>}
+              {errors?.companyName?.type === "maxLength" && (
+                <span className="flex justify-center text-xs m-0 text-red-500"><RiErrorWarningLine className="m-1" />Company name cannot exceed 80 characters</span>
+              )}
+              {errors?.companyName?.type === "pattern" && (
+                <span className="flex justify-center text-xs m-0 text-red-500"><RiErrorWarningLine className="m-1" />Company name Alphabetical characters only</span>
+              )}
+              {errors?.fullName?.type === "required" && <span className="flex justify-center text-xs m-0 text-red-500"><RiErrorWarningLine className="m-1" />First Name field is required</span>}
+              {errors?.fullName?.type === "maxLength" && (
+                <span className="flex justify-center text-xs m-0 text-red-500"><RiErrorWarningLine className="m-1" />First name cannot exceed 50 characters</span>
+              )}
+              {errors?.fullName?.type === "pattern" && (
+                <span className="flex justify-center text-xs m-0 text-red-500"><RiErrorWarningLine className="m-1" />First name Alphabetical characters only</span>
+              )}
+              {errors?.phoneNumber?.type === "required" && <span className="flex justify-center text-xs m-0 text-red-500"><RiErrorWarningLine className="m-1" />phone Number field is required</span>}
+
+              {errors?.email?.type === "required" && <span className="flex justify-center text-xs m-0 text-red-500"><RiErrorWarningLine className="m-1" />Email ID field is required</span>}
+
             </form>
           </div>
         </React.Fragment>
