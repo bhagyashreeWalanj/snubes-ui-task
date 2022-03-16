@@ -33,7 +33,7 @@ npm start
 
 ## Features
 
-- Fill form with all fields validations
+- A form filled with all field validations
 - input Phone Number with country code selection 
 - Manubar Link Navigation on scroll
 - Responsive web Page
