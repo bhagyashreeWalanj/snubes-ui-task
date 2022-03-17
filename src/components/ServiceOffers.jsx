@@ -2,7 +2,6 @@ import React from 'react'
 import services from '../__mockups/servicesOffer.json';
 
 export default function ServiceOffers() {
-
   return (
     <div id="servicesOffers" className="flex justify-center items-center mx-auto py-10 text-black border-y-4 border-zinc-100">
       <div className="flex items-center justify-center">
